@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:backgroundTint="@android:color/holo_orange_dark"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="229dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/casa"
+        app:layout_constraintBottom_toTopOf="@+id/tvMsjsLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@drawable/casa" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="Inmobiliaria"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/etCorreoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="230dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="correo"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="gabrielt9303@gmail.com"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edPasswordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="230dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="contraseña: 1234"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="1234"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestablecerPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRestablecerPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Restablecer contraseña"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/border_blanco_btn"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:text="INICIAR SESION"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMsjsLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:paddingStart="10dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="6dp"
+        android:textColorLink="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreoLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

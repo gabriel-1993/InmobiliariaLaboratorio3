@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/text_border_blanco">
+
+    <EditText
+        android:id="@+id/etPagoNro"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/etPagoMonto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <EditText
+        android:id="@+id/etPagoMonto"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/etPagoFechaPago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPagoFechaPago"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

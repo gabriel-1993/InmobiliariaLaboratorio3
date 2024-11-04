@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".ui.contratos.ContratoDetalleFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="254dp"
+        android:layout_height="193dp"
+        android:src="@drawable/casa"
+        app:layout_constraintBottom_toTopOf="@+id/etGaranteContratoDetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <EditText
+        android:id="@+id/etGaranteContratoDetalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="270dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/InquilinoContratoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/InquilinoContratoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="270dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/fechaDesdeContratoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/fechaDesdeContratoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="270dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/fechaHastaContratoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/fechaHastaContratoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="270dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/precioContratoDetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/precioContratoDetalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="270dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/etTelInquilinoContratoDetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etTelInquilinoContratoDetalles"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/edTelGaranteContratoDetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edTelGaranteContratoDetalles"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnPagosContratoDetalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPagosContratoDetalles"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/border_blanco_btn"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:text="PAGOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

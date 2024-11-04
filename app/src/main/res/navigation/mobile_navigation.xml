@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_nav_perfil_to_modificarClaveFragment"
+            app:destination="@id/modificarClaveFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inmueble"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inmuebles.InmueblesFragment"
+        android:label="@string/menu_inmuebles">
+        <action
+            android:id="@+id/action_nav_inmueble_to_inmuebleCrearFragment"
+            app:destination="@id/inmuebleCrearFragment" />
+        <action
+            android:id="@+id/action_nav_inmueble_to_detalleInmuebleFragment"
+            app:destination="@id/detalleInmuebleFragment" />
+        <action
+            android:id="@+id/action_nav_inmueble_to_inmuebleCrearFragment2"
+            app:destination="@id/inmuebleCrearFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleInmuebleFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inmuebles.InmuebleDetallesFragment"
+        android:label="Detalles Inmueble"
+        tools:layout="@layout/fragment_inmueble_detalles">
+        <action
+            android:id="@+id/action_detalleInmuebleFragment_to_nav_inmueble"
+            app:destination="@id/nav_inmueble" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inmuebleCrearFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inmuebles.InmuebleCrearFragment"
+        android:label="Crear Inmueble"
+        tools:layout="@layout/fragment_inmueble_crear">
+        <action
+            android:id="@+id/action_inmuebleCrearFragment_to_nav_inmueble"
+            app:destination="@id/nav_inmueble" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_inquilinos"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inquilinos.InquilinosFragment"
+        android:label="@string/menu_inquilinos"
+        tools:layout="@layout/fragment_inquilinos" >
+        <action
+            android:id="@+id/action_nav_inquilinos_to_inquilinoDetallesFragment"
+            app:destination="@id/inquilinoDetallesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contratos"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.contratos.ContratosFragment"
+        android:label="@string/menu_contratos"
+        tools:layout="@layout/fragment_contratos" >
+        <action
+            android:id="@+id/action_nav_contratos_to_contratoDetalleFragment"
+            app:destination="@id/contratoDetalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cerrarsesion"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.cerrarsesion.CerrarSesionFragment"
+        android:label= "Cerrar sesion"
+        tools:layout="@layout/fragment_cerrar_sesion" />
+    <fragment
+        android:id="@+id/modificarClaveFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.perfil.ModificarClaveFragment"
+        android:label="Modificar Clave"
+        tools:layout="@layout/fragment_modificar_clave" >
+        <action
+            android:id="@+id/action_modificarClaveFragment_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/inquilinoDetallesFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.inquilinos.InquilinoDetallesFragment"
+        android:label="Detalles inquilino"
+        tools:layout="@layout/fragment_inquilino_detalles">
+        <action
+            android:id="@+id/action_inquilinoDetallesFragment_to_nav_inquilinos"
+            app:destination="@id/nav_inquilinos" />
+    </fragment>
+    <fragment
+        android:id="@+id/contratoDetalleFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.contratos.ContratoDetalleFragment"
+        android:label="Detalles Contrato"
+        tools:layout="@layout/fragment_contrato_detalle" >
+        <action
+            android:id="@+id/action_contratoDetalleFragment_to_nav_contratos"
+            app:destination="@id/nav_contratos" />
+        <action
+            android:id="@+id/action_contratoDetalleFragment_to_pagosFragment2"
+            app:destination="@id/pagosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagosFragment"
+        android:name="com.ulpsoft.inmobiliarialaboratorio3.ui.pagos.PagosFragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pagos" >
+        <action
+            android:id="@+id/action_pagosFragment_to_contratoDetalleFragment2"
+            app:destination="@id/contratoDetalleFragment" />
+    </fragment>
+
+
+</navigation>

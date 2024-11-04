@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".ui.perfil.PerfilFragment">
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:width="250dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMsjsPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:width="250dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="Documento"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:width="250dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:width="250dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:width="250dp"
+        android:background="@drawable/fondogrisclaro"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnModificarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Modificar Foto"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificarClave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Modificar Contraseña"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDocumento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMsjsPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificarPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPerfilModificar"
+        android:layout_width="225dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toTopOf="@+id/btnModificarFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnModificarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_border_blanco"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Modificar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
