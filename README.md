@@ -24,6 +24,8 @@ Tabla de contenido
 18. Bibliografía
 19. Anexo I
 
+
+
 1. Introducción
 Este proyecto es el trabajo integrador para la materia Laboratorio 3 de la ULP, con un objetivo doble: desarrollarlo para cumplir con los requisitos académicos y utilizarlo en la práctica dentro de un box de CrossFit. La intención es que el gimnasio cuente con una app personalizada que permita a sus usuarios gestionar reservas de clases y disfrutar de funciones adicionales que mejoren su experiencia general.
 
