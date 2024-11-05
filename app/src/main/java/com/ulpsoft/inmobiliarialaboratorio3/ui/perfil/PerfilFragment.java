@@ -77,6 +77,7 @@ public class PerfilFragment extends Fragment {
                         .placeholder(R.drawable.ic_launcher_background)
                         .error(R.drawable.sinfoto)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
+                        .circleCrop()
                         .into(binding.ivPerfilModificar);
             }
         });

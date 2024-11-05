@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .placeholder(R.drawable.sinfoto)
                         .error(R.drawable.sinfoto)
+                        .circleCrop()
                         .into(foto);
             }
         });

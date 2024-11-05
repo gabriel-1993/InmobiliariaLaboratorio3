@@ -56,7 +56,6 @@ public class ApiClient {
     };
 
 
-
     private static SharedPreferences getSharedPreference(Context context){
         if(sp == null){
             sp = context.getSharedPreferences("usuario",0);
