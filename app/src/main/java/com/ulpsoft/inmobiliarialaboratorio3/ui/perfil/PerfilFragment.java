@@ -72,8 +72,9 @@ public class PerfilFragment extends Fragment {
                         //.load("http://192.168.1.3:5290/"+propietario.getAvatar())
                         //sanluis
                         //.load("http://192.168.0.8:5290"+propietario.getAvatar())
+                        //.load("http://192.168.0.9:5290"+propietario.getAvatar())
                        //ger
-                        .load("http://192.168.0.5:5290"+propietario.getAvatar())
+                        .load("http://192.168.1.4:5290"+propietario.getAvatar())
                         .placeholder(R.drawable.ic_launcher_background)
                         .error(R.drawable.sinfoto)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)

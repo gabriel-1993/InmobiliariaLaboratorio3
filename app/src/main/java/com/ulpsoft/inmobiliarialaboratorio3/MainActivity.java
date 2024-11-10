@@ -75,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // Carga la imagen del propietario
                 Glide.with(MainActivity.this)
-                        .load("http://192.168.0.5:5290" + propietario.getAvatar())
+                        //.load("http://192.168.0.5:5290" + propietario.getAvatar())
+                        .load("http://192.168.1.4:5290" + propietario.getAvatar())
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
                         .placeholder(R.drawable.sinfoto)
                         .error(R.drawable.sinfoto)

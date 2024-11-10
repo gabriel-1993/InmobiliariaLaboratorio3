@@ -29,15 +29,15 @@ import retrofit2.http.PUT;
 import retrofit2.http.Part;
 
 public class ApiClient {
+    //MIS IPS:
     //Lapunta
-    //public static final String URLBASE = "http://192.168.1.3:5290/api/";
-
+    public static final String URLBASE = "http://192.168.1.4:5290/api/";
     //Sanluis
     //public static final String URLBASE = "http://192.168.0.8:5290/api/";
+    //public static final String URLBASE = "http://192.168.0.9:5290/api/";
     //public static final String URLBASE = "http://192.168.0.3:5290/api/";
-
     //ger
-    public static final String URLBASE = "http://192.168.0.5:5290/api/";
+    //public static final String URLBASE = "http://192.168.0.5:5290/api/";
 
     private static SharedPreferences sp;
     private static String token;

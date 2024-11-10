@@ -52,7 +52,8 @@ public class InmueblesAdapter extends RecyclerView.Adapter<InmueblesAdapter.View
         // .load("http://192.168.0.5:5290"+inmueble.getAvatar())
         //.load("http://192.168.0.8:5290"+inmueble.getAvatar())
         Glide.with(holder.ivFoto.getContext())
-                    .load("http://192.168.0.5:5290"+inmueble.getAvatar())
+                    //.load("http://192.168.0.5:5290"+inmueble.getAvatar())
+                    .load("http://192.168.1.4:5290"+inmueble.getAvatar())
                     .placeholder(R.drawable.casa) // Un recurso de imagen de carga
                     .error(R.drawable.casa) // Un recurso de imagen de error
                     .diskCacheStrategy(DiskCacheStrategy.ALL) //guardar en cache del telefono
