@@ -95,4 +95,4 @@ Para ver el diagrama de la base de datos, consulta el archivo `CapturaBDD` en el
 La navegación será intuitiva, con un menú en la parte inferior o superior de la pantalla para facilitar el acceso a las funciones.
 
 ---
-
+¡Gracias por leer! 
