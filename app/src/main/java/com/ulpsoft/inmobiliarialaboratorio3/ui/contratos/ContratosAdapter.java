@@ -58,11 +58,7 @@ public class ContratosAdapter extends RecyclerView.Adapter<ContratosAdapter.View
 
         // Cargar la imagen del inmueble
         Glide.with(holder.itemView.getContext())
-                //.load("http://192.168.1.3:5290/" + inmueble.getAvatar())
-                //ger
-                //.load("http://192.168.0.5:5290"+inmueble.getAvatar())
-                .load("http://192.168.1.4:5290"+inmueble.getAvatar())
-                //.load("http://192.168.0.3:5290"+inmueble.getAvatar())
+                .load("http://192.168.100.3:5290"+inmueble.getAvatar())
 
                 .placeholder(R.drawable.casa)
                 .error(R.drawable.casa)

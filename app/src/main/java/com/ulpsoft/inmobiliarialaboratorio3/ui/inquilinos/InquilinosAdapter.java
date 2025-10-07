@@ -51,11 +51,7 @@ public class InquilinosAdapter extends RecyclerView.Adapter<InquilinosAdapter.Vi
 
         // Cargar la imagen del inmueble
         Glide.with(holder.ivFoto.getContext())
-                //sanluis
-               // .load("http://192.168.0.8:5290" + inmueble.getAvatar())
-                //.load("http://192.168.0.3:5290" + inmueble.getAvatar())
-                //.load("http://192.168.0.5:5290" + inmueble.getAvatar())
-                .load("http://192.168.1.4:5290" + inmueble.getAvatar())
+                .load("http://192.168.100.3:5290" + inmueble.getAvatar())
                 .placeholder(R.drawable.casa)
                 .error(R.drawable.casa)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

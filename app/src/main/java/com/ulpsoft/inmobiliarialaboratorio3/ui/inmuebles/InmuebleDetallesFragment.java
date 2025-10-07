@@ -55,14 +55,9 @@ public static InmuebleDetallesFragment newInstance() { return new InmuebleDetall
                 binding.tvTipoDetalles.setText("Tipo: "+inmueble.getTipo());
                 binding.tvUsoDetalles.setText("Uso: "+inmueble.getUso());
 
-                //lapunta
-                //.load("http://192.168.1.3:5290/"+inmueble.getAvatar())
-                //ger
-                //.load("http://192.168.0.5:5290"+inmueble.getAvatar())
-                //.load("http://192.168.0.8:5290"+inmueble.getAvatar())
+
                 Glide.with(binding.ivInmuebleDetalles.getContext())
-                        //.load("http://192.168.0.5:5290"+inmueble.getAvatar())
-                        .load("http://192.168.1.4:5290"+inmueble.getAvatar())
+                        .load("http://192.168.100.3:5290"+inmueble.getAvatar())
                         .placeholder(R.drawable.casa)
                         .error(R.drawable.casa)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)

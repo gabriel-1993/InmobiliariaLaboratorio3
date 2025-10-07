@@ -9,6 +9,7 @@
     android:backgroundTint="@android:color/holo_orange_dark"
     tools:context=".ui.login.LoginActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="229dp"
@@ -18,25 +19,9 @@
         app:layout_constraintBottom_toTopOf="@+id/tvMsjsLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/casa" />
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_orange_dark"
-        android:gravity="center"
-        android:text="Inmobiliaria"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintVertical_bias="0.886"
+        tools:srcCompat="@drawable/casa" />
 
     <EditText
         android:id="@+id/etCorreoLogin"
